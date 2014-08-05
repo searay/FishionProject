@@ -89,6 +89,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574EA2E51990A0500015E341 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
 		D8DD791E19908C59008423BF = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +130,7 @@
 		D8DD793219908C59008423BF /* FishionPro */ = {
 			isa = PBXGroup;
 			children = (
+				574EA2E51990A0500015E341 /* iPad */,
 				D8DD793B19908C59008423BF /* AppDelegate.h */,
 				D8DD793C19908C59008423BF /* AppDelegate.m */,
 				D8DD793E19908C59008423BF /* Main.storyboard */,
@@ -395,7 +403,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FishionPro/FishionPro-Prefix.pch";
 				INFOPLIST_FILE = "FishionPro/FishionPro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +418,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FishionPro/FishionPro-Prefix.pch";
 				INFOPLIST_FILE = "FishionPro/FishionPro-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -472,6 +484,7 @@
 				D8DD796419908C59008423BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8DD796519908C59008423BF /* Build configuration list for PBXNativeTarget "FishionProTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +493,7 @@
 				D8DD796719908C59008423BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
