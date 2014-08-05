@@ -41,7 +41,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     
-    NSLog(@"TESTING Trying");
+    NSLog(@"TESTING Trying to keep");
 }
 
 - (void)didReceiveMemoryWarning
