@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "FissionProApi.h"
 
 @interface LoginViewController ()
 
@@ -36,6 +37,15 @@
     if ([self.userNameTextField.text rangeOfString:@"@"].location == NSNotFound) {
         
         [self messageBox:@"Enter valid email address." withTile:@"Invalid username"];
+    }
+    else {
+        
+        FissionProApi* fissionApi = [[FissionProApi alloc] init];
+        
+        NSString* response =[fissionApi login:self.userNameTextField.text
+                                 withPassword:self.passwordTextField.text
+                                   rememberMe:YES];
+        
     }
         
     return;

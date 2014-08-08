@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D89B01631995590F006146E3 /* FishionPro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89B01621995590F006146E3 /* FishionPro.storyboard */; };
 		D89B0166199559C6006146E3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B0165199559C6006146E3 /* LoginViewController.m */; };
+		D89B016919957674006146E3 /* FissionProApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B016819957674006146E3 /* FissionProApi.m */; };
 		D8DD792B19908C59008423BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792A19908C59008423BF /* Foundation.framework */; };
 		D8DD792D19908C59008423BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792C19908C59008423BF /* CoreGraphics.framework */; };
 		D8DD792F19908C59008423BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792E19908C59008423BF /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		D89B01621995590F006146E3 /* FishionPro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FishionPro.storyboard; sourceTree = "<group>"; };
 		D89B0164199559C6006146E3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D89B0165199559C6006146E3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D89B016719957674006146E3 /* FissionProApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FissionProApi.h; sourceTree = "<group>"; };
+		D89B016819957674006146E3 /* FissionProApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FissionProApi.m; sourceTree = "<group>"; };
 		D8DD792719908C59008423BF /* FishionPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishionPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DD792A19908C59008423BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8DD792C19908C59008423BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				D8DD794A19908C59008423BF /* Images.xcassets */,
 				D8DD794119908C59008423BF /* FishionPro.xcdatamodeld */,
 				D8DD793319908C59008423BF /* Supporting Files */,
+				D89B016719957674006146E3 /* FissionProApi.h */,
+				D89B016819957674006146E3 /* FissionProApi.m */,
 			);
 			path = FishionPro;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89B0166199559C6006146E3 /* LoginViewController.m in Sources */,
+				D89B016919957674006146E3 /* FissionProApi.m in Sources */,
 				D8DD794319908C59008423BF /* FishionPro.xcdatamodeld in Sources */,
 				D8DD793D19908C59008423BF /* AppDelegate.m in Sources */,
 				D8DD793919908C59008423BF /* main.m in Sources */,
