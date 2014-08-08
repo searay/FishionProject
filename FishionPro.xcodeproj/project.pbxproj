@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D89B01631995590F006146E3 /* FishionPro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89B01621995590F006146E3 /* FishionPro.storyboard */; };
+		D89B0166199559C6006146E3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B0165199559C6006146E3 /* LoginViewController.m */; };
 		D8DD792B19908C59008423BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792A19908C59008423BF /* Foundation.framework */; };
 		D8DD792D19908C59008423BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792C19908C59008423BF /* CoreGraphics.framework */; };
 		D8DD792F19908C59008423BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792E19908C59008423BF /* UIKit.framework */; };
@@ -14,10 +16,7 @@
 		D8DD793719908C59008423BF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8DD793519908C59008423BF /* InfoPlist.strings */; };
 		D8DD793919908C59008423BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DD793819908C59008423BF /* main.m */; };
 		D8DD793D19908C59008423BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DD793C19908C59008423BF /* AppDelegate.m */; };
-		D8DD794019908C59008423BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DD793E19908C59008423BF /* Main.storyboard */; };
 		D8DD794319908C59008423BF /* FishionPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8DD794119908C59008423BF /* FishionPro.xcdatamodeld */; };
-		D8DD794619908C59008423BF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DD794519908C59008423BF /* MasterViewController.m */; };
-		D8DD794919908C59008423BF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DD794819908C59008423BF /* DetailViewController.m */; };
 		D8DD794B19908C59008423BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DD794A19908C59008423BF /* Images.xcassets */; };
 		D8DD795219908C59008423BF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD795119908C59008423BF /* XCTest.framework */; };
 		D8DD795319908C59008423BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD792A19908C59008423BF /* Foundation.framework */; };
@@ -38,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D89B01621995590F006146E3 /* FishionPro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FishionPro.storyboard; sourceTree = "<group>"; };
+		D89B0164199559C6006146E3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		D89B0165199559C6006146E3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		D8DD792719908C59008423BF /* FishionPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FishionPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DD792A19908C59008423BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D8DD792C19908C59008423BF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,12 +51,7 @@
 		D8DD793A19908C59008423BF /* FishionPro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FishionPro-Prefix.pch"; sourceTree = "<group>"; };
 		D8DD793B19908C59008423BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D8DD793C19908C59008423BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D8DD793F19908C59008423BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8DD794219908C59008423BF /* FishionPro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FishionPro.xcdatamodel; sourceTree = "<group>"; };
-		D8DD794419908C59008423BF /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		D8DD794519908C59008423BF /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		D8DD794719908C59008423BF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		D8DD794819908C59008423BF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D8DD794A19908C59008423BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D8DD795019908C59008423BF /* FishionProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FishionProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DD795119908C59008423BF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,13 +120,11 @@
 		D8DD793219908C59008423BF /* FishionPro */ = {
 			isa = PBXGroup;
 			children = (
+				D89B01621995590F006146E3 /* FishionPro.storyboard */,
 				D8DD793B19908C59008423BF /* AppDelegate.h */,
 				D8DD793C19908C59008423BF /* AppDelegate.m */,
-				D8DD793E19908C59008423BF /* Main.storyboard */,
-				D8DD794419908C59008423BF /* MasterViewController.h */,
-				D8DD794519908C59008423BF /* MasterViewController.m */,
-				D8DD794719908C59008423BF /* DetailViewController.h */,
-				D8DD794819908C59008423BF /* DetailViewController.m */,
+				D89B0164199559C6006146E3 /* LoginViewController.h */,
+				D89B0165199559C6006146E3 /* LoginViewController.m */,
 				D8DD794A19908C59008423BF /* Images.xcassets */,
 				D8DD794119908C59008423BF /* FishionPro.xcdatamodeld */,
 				D8DD793319908C59008423BF /* Supporting Files */,
@@ -243,8 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DD794B19908C59008423BF /* Images.xcassets in Resources */,
+				D89B01631995590F006146E3 /* FishionPro.storyboard in Resources */,
 				D8DD793719908C59008423BF /* InfoPlist.strings in Resources */,
-				D8DD794019908C59008423BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,8 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DD794919908C59008423BF /* DetailViewController.m in Sources */,
-				D8DD794619908C59008423BF /* MasterViewController.m in Sources */,
+				D89B0166199559C6006146E3 /* LoginViewController.m in Sources */,
 				D8DD794319908C59008423BF /* FishionPro.xcdatamodeld in Sources */,
 				D8DD793D19908C59008423BF /* AppDelegate.m in Sources */,
 				D8DD793919908C59008423BF /* main.m in Sources */,
@@ -296,14 +290,6 @@
 				D8DD793619908C59008423BF /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D8DD793E19908C59008423BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8DD793F19908C59008423BF /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		D8DD795B19908C59008423BF /* InfoPlist.strings */ = {
@@ -392,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FishionPro/FishionPro-Prefix.pch";
 				INFOPLIST_FILE = "FishionPro/FishionPro-Info.plist";
@@ -407,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FishionPro/FishionPro-Prefix.pch";
 				INFOPLIST_FILE = "FishionPro/FishionPro-Info.plist";
