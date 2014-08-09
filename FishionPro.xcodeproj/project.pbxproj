@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8412358199592780018A4EF /* TimeEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8412357199592780018A4EF /* TimeEntryCell.xib */; };
+		D841235B1995962C0018A4EF /* TimeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D841235A1995962C0018A4EF /* TimeEntryViewController.m */; };
+		D841235E199598DE0018A4EF /* TimeEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D841235D199598DE0018A4EF /* TimeEntryCell.m */; };
+		D841236019959F520018A4EF /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = D841235F19959F520018A4EF /* clock.png */; };
+		D841236219959FF10018A4EF /* pouch.png in Resources */ = {isa = PBXBuildFile; fileRef = D841236119959FF10018A4EF /* pouch.png */; };
 		D89B01631995590F006146E3 /* FishionPro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89B01621995590F006146E3 /* FishionPro.storyboard */; };
 		D89B0166199559C6006146E3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B0165199559C6006146E3 /* LoginViewController.m */; };
 		D89B016919957674006146E3 /* FissionProApi.m in Sources */ = {isa = PBXBuildFile; fileRef = D89B016819957674006146E3 /* FissionProApi.m */; };
@@ -38,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8412357199592780018A4EF /* TimeEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeEntryCell.xib; sourceTree = "<group>"; };
+		D84123591995962C0018A4EF /* TimeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeEntryViewController.h; path = ../TimeEntryViewController.h; sourceTree = "<group>"; };
+		D841235A1995962C0018A4EF /* TimeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeEntryViewController.m; path = ../TimeEntryViewController.m; sourceTree = "<group>"; };
+		D841235C199598DE0018A4EF /* TimeEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeEntryCell.h; path = ../TimeEntryCell.h; sourceTree = "<group>"; };
+		D841235D199598DE0018A4EF /* TimeEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TimeEntryCell.m; path = ../TimeEntryCell.m; sourceTree = "<group>"; };
+		D841235F19959F520018A4EF /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		D841236119959FF10018A4EF /* pouch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pouch.png; sourceTree = "<group>"; };
 		D89B01621995590F006146E3 /* FishionPro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FishionPro.storyboard; sourceTree = "<group>"; };
 		D89B0164199559C6006146E3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		D89B0165199559C6006146E3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -92,6 +104,8 @@
 		D8DD791E19908C59008423BF = {
 			isa = PBXGroup;
 			children = (
+				D841236119959FF10018A4EF /* pouch.png */,
+				D841235F19959F520018A4EF /* clock.png */,
 				D8DD793219908C59008423BF /* FishionPro */,
 				D8DD795819908C59008423BF /* FishionProTests */,
 				D8DD792919908C59008423BF /* Frameworks */,
@@ -123,6 +137,10 @@
 		D8DD793219908C59008423BF /* FishionPro */ = {
 			isa = PBXGroup;
 			children = (
+				D841235C199598DE0018A4EF /* TimeEntryCell.h */,
+				D841235D199598DE0018A4EF /* TimeEntryCell.m */,
+				D84123591995962C0018A4EF /* TimeEntryViewController.h */,
+				D841235A1995962C0018A4EF /* TimeEntryViewController.m */,
 				D89B01621995590F006146E3 /* FishionPro.storyboard */,
 				D8DD793B19908C59008423BF /* AppDelegate.h */,
 				D8DD793C19908C59008423BF /* AppDelegate.m */,
@@ -133,6 +151,7 @@
 				D8DD793319908C59008423BF /* Supporting Files */,
 				D89B016719957674006146E3 /* FissionProApi.h */,
 				D89B016819957674006146E3 /* FissionProApi.m */,
+				D8412357199592780018A4EF /* TimeEntryCell.xib */,
 			);
 			path = FishionPro;
 			sourceTree = "<group>";
@@ -243,8 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DD794B19908C59008423BF /* Images.xcassets in Resources */,
+				D841236019959F520018A4EF /* clock.png in Resources */,
 				D89B01631995590F006146E3 /* FishionPro.storyboard in Resources */,
 				D8DD793719908C59008423BF /* InfoPlist.strings in Resources */,
+				D8412358199592780018A4EF /* TimeEntryCell.xib in Resources */,
+				D841236219959FF10018A4EF /* pouch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89B0166199559C6006146E3 /* LoginViewController.m in Sources */,
+				D841235E199598DE0018A4EF /* TimeEntryCell.m in Sources */,
 				D89B016919957674006146E3 /* FissionProApi.m in Sources */,
+				D841235B1995962C0018A4EF /* TimeEntryViewController.m in Sources */,
 				D8DD794319908C59008423BF /* FishionPro.xcdatamodeld in Sources */,
 				D8DD793D19908C59008423BF /* AppDelegate.m in Sources */,
 				D8DD793919908C59008423BF /* main.m in Sources */,

@@ -43,6 +43,7 @@
                                 </state>
                                 <connections>
                                     <action selector="authenticate:" destination="j4y-Jq-msV" eventType="touchUpInside" id="k2b-Pc-Vk8"/>
+                                    <segue destination="KjG-vb-ZwH" kind="push" id="9TJ-8H-XQj"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-iF-eBh">
@@ -70,6 +71,101 @@
             </objects>
             <point key="canvasLocation" x="797" y="-171"/>
         </scene>
+        <!--Time Entry View Controller - Time Entry-->
+        <scene sceneID="1QE-vZ-aa6">
+            <objects>
+                <viewController title="Time Entry" id="oqy-sH-h9D" customClass="TimeEntryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H2a-cD-hyt"/>
+                        <viewControllerLayoutGuide type="bottom" id="SUz-dK-6jb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="779-Sf-c4d">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXZ-92-6pk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-pW-k1E">
+                                        <rect key="frame" x="82" y="15" width="157" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HsN-7n-a2o">
+                                        <rect key="frame" x="1" y="1" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <items>
+                                            <barButtonItem title="&lt;&lt;" id="k8v-uk-mmj"/>
+                                            <barButtonItem width="235" style="plain" systemItem="fixedSpace" id="YKm-eg-faB"/>
+                                            <barButtonItem title=">>" id="MM4-RI-axH"/>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.037315934779999997" green="0.26909677009999999" blue="0.44385156250000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-pj-MAa">
+                                <rect key="frame" x="0.0" y="45" width="320" height="408"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oqy-sH-h9D" id="zaO-rk-dXl"/>
+                                    <outlet property="delegate" destination="oqy-sH-h9D" id="7sL-0t-b8o"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.037315934779999997" green="0.26909677009999999" blue="0.44385156250000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Time Entry" image="clock.png" id="D0a-ll-Hhd"/>
+                    <connections>
+                        <outlet property="timeEntryTableView" destination="SDn-pj-MAa" id="gjm-bc-Xf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIz-6a-H69" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="-498"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dLv-yr-utI">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="KjG-vb-ZwH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Zzw-J6-sKf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="do9-aO-i4x">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="oqy-sH-h9D" kind="relationship" relationship="viewControllers" id="Arn-Ex-x1Q"/>
+                        <segue destination="dwK-I7-hnJ" kind="relationship" relationship="viewControllers" id="wzm-dv-lfO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVn-K1-zfW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="-171"/>
+        </scene>
+        <!--View Controller - Expense-->
+        <scene sceneID="Olb-Go-cHQ">
+            <objects>
+                <viewController title="Expense" id="dwK-I7-hnJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WTz-gc-S34"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Ld-Li-7b0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p4u-dx-Hsr">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expenses" image="pouch.png" id="ha4-wt-TMY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r9e-Mz-ZtL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1698" y="155"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="p3W-iR-v7U">
             <objects>
@@ -90,6 +186,10 @@
             <point key="canvasLocation" x="271" y="-171"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clock.png" width="29" height="30"/>
+        <image name="pouch.png" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
