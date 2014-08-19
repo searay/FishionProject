@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[LoginViewController editCompletedEvent:]:LoginViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender.class">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TimeEntryViewController tableView:cellForRowAtIndexPath:]:TimeEntryViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.progressLabel.frame">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

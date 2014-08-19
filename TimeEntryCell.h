@@ -10,5 +10,7 @@
 
 @interface TimeEntryCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *dayLabel;
+@property (weak, nonatomic) IBOutlet UIView *progressLabel;
+@property (weak, nonatomic) IBOutlet UIView *progressContainer;
 
 @end

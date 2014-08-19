@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D1x-IS-INH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="D1x-IS-INH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -107,7 +107,7 @@
                                 <color key="backgroundColor" red="0.037315934779999997" green="0.26909677009999999" blue="0.44385156250000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-pj-MAa">
-                                <rect key="frame" x="0.0" y="45" width="320" height="408"/>
+                                <rect key="frame" x="0.0" y="48" width="320" height="408"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -121,18 +121,44 @@
                     <tabBarItem key="tabBarItem" title="Time Entry" image="clock.png" id="D0a-ll-Hhd"/>
                     <connections>
                         <outlet property="timeEntryTableView" destination="SDn-pj-MAa" id="gjm-bc-Xf8"/>
+                        <segue destination="xzE-vt-yP9" kind="push" id="ms2-zI-7Y4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uIz-6a-H69" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-498"/>
+            <point key="canvasLocation" x="1689" y="-502"/>
+        </scene>
+        <!--Task Entry View Controller-->
+        <scene sceneID="yhe-D1-3nT">
+            <objects>
+                <viewController id="xzE-vt-yP9" customClass="TaskEntryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4NX-PR-cUQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="NRY-y8-254"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U2q-G7-42r" customClass="Task">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="M8L-l0-1dz">
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="3Cb-Se-Kda">
+                            <connections>
+                                <action selector="addNewTask:" destination="xzE-vt-yP9" id="qFD-kv-0Xe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iV-Yq-PaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="-494"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dLv-yr-utI">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="KjG-vb-ZwH" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Zzw-J6-sKf"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="do9-aO-i4x">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
